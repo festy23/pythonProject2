@@ -1,0 +1,241 @@
+aside {
+    float: left;
+    background-color: #364a63;
+    width: width: calc(250px + (1500 - 250) * ((100vw - 500px) / (1920 - 500)))
+    padding: 2.5%;
+    height: 100vh;
+    min-width: 280px;
+    position: fixed
+}
+
+aside img {
+    width: 300px;
+    length: 300px;
+    float: left;
+    position: sticky
+}
+
+aside h1 {
+    font-weight: bold;
+    color: #00458;
+}
+aside h3 {
+    margin-top: 100px;
+    font-weight: bold;
+    font-size: 30px;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    padding-left: 20px;
+    font-family: Verdana;
+    text-rendering: optimizeSpeed;
+}
+aside p {
+  left: 0;
+  bottom: 0;
+}
+aside ul {list-style: none}
+aside ul li {
+    color: #fff;
+    font-family: Times, serif;
+    font-size: 20px;
+    display: block;
+    margin-top: 20px;
+    text-decoration: none;
+    transition: transform .6s ease;
+}
+a { text-decoration: none; }
+
+aside ul li:hover, aside ul a:hover {
+    color: #EEE8AA;
+    text-decoration: none;
+    transform: scale(0.97);
+}
+aside p{
+    position: fixed;
+    margin: 300px auto 0;
+    color: #fff;
+    font-size: 12px;
+}
+main {height: 1750px;}
+main .features {
+    margin-left:330px;
+    height: 1250px;
+    float: left;
+    color: #000;
+    margin-top: 70px;
+    text-align: center;
+    width: 1035px;
+}
+
+main .description h3 {color: #00458b; font-family: 'Raleway', sans-serif; text-align: left; font-size:40px;
+}
+
+main .features h1 {
+    font-size: 50px; color: #00458b;
+    font-family: 'Cormorant Garamond';
+    font-weight: bold;
+    width: 1100px;
+}
+main .features p {
+    font-size: 20px;
+    max-width: 400px;
+    margin: 30px auto;
+    color: #000;
+    font-family: 'Raleway', sans-serif;
+}
+
+main .description {
+    margin-left:350px;
+    height: 260px;
+    width: 1100px;
+    margin-top: -550px;
+    float: left;
+    text-align: justify;
+    border-radius: 10px
+}
+main .description h1, main .test p {
+    font-size: 25px;
+    font-family: Times, serif;
+    color: #696969;
+    margin-top: 10px;
+    margin: 20px auto;
+    padding-left:20px;
+    padding-right: 20px;
+}
+main .description p, main .test h3 {font-size:30px; color: #00458b; font-family: 'Raleway', sans-serif;}
+main .block {
+  border-radius: 10px;
+  display: block;
+  width: 520px;
+  height: 60px;
+  position: relative;
+  bottom: -30px;
+  border: none;
+  background-color: b9b9b9;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  transition: transform .4s ease;
+
+}
+
+main .block:hover {
+    transform: scale(0.98);
+	background-color: #f4db7d;
+}
+
+/* тесты */
+
+main .test {
+    margin-left:330px;
+    height: 2550px;
+    float: left;
+    color: #000;
+    margin-top: 70px;
+    width: 1035px;
+    position: sticky;
+    padding: 14px 28px;
+}
+main .quizsection form {margin-left: 10px;}
+
+.test_button {
+    height: 50px;
+    width: 240px;
+    margin-top: 30px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: none;
+    position: relative;
+    transition: transform .4s ease;
+    background-color: #CCCCFF;
+}
+.test_button:hover {
+    transform: scale(0.98);
+	background-color: #f4db7d;}
+
+main .quizsection h3 {font-size:25px; color: #00458b; font-family: 'Raleway';margin-top: 25px;}
+main .quizsection p {
+  font-size:25px;
+  color: #fff;
+  border-radius: 10px;
+  margin-top: 45px;
+  display: block;
+  position: relative;
+  bottom: 20px;
+  border: none;
+  background-color: #6CB2E0;
+}
+input[type='radio'],
+label {
+  cursor: pointer;
+}
+
+input[type='radio'] {
+  position: relative;
+  height: 15px;
+  width: 15px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+}
+
+input[type='radio']::before {
+  content: '';
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border: 2px solid dodgerblue;
+}
+
+input[type='radio']:checked::after {
+  content: '';
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #6CB2E0;
+  transform: translate(-50%, -50%);
+  visibility: visible;
+}
+.about {margin-left:330px;
+    height: 750px;
+    float: left;
+    color: #000;
+    margin-top: 70px;
+    width: 1035px;
+    position: sticky;
+    padding: 14px 28px;
+}
+
+.main_diagnosis {
+    border-radius: 10px;
+    display: block;
+    margin-bottom: 70px;
+    margin-left: 260px;
+    width: 520px;
+    height: 60px;
+    position: relative;
+    border: none;
+    background-color: #6CB2E0;
+    padding: 14px 28px;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+    text-align: center;
+    transition: transform .4s ease;}
+
+.main_diagnosis:hover {
+    transform: scale(0.98);
+	background-color: #f4db7d;}
+
+
+.back {font-size:20px;color:#6CB2E0}

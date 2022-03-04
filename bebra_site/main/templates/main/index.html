@@ -1,0 +1,27 @@
+{% extends 'main/layout.html' %}
+{% load static %}
+{% block title%}lesante.ru{% endblock %}
+
+
+{% block content %}
+    <div class="features">
+        <h1>“Единственная красота, которую я знаю, — это здоровье. ”</h1>
+        <p>- Генрих Гейне</p>
+        <img src="static/main/img/nature_stock2.jpg" width="600" height="400" style="margin-left: 40px;"/>
+    </div>
+    <div class="description">
+        <button type="button" class="main_diagnosis" onClick="location.href='/main_test'">Пройти общую диагностику</button><br />
+        <p>Дисклеймер<p>
+        <h1>&#8226; На нашем сайте собраны подробные тесты по проведению обследования общего состояния здоровья человека.
+            При прохождении тестов вы должны
+            помнить обследование - это не диагноз <br />
+            &#8226; Обследование проводится в информационных целях и не является квалифицированным медицинским
+            заключением <br />
+            &#8226; В случае чрезвычайной ситуации со здоровьем немедленно позвоните по местному номеру
+            экстренной помощи <br />
+        </h1>
+        <br><p>Каталог тестов</p>
+        <button type="button" class="block" onClick="location.href='/test1'">Боли в области живота сверху</button><br />
+        <button type="button" class="block" onClick="location.href='/test2'">Боли в области живота снизу</button><br />
+
+{% endblock %}

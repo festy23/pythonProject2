@@ -1,0 +1,42 @@
+{% extends 'main/layout.html' %}
+
+{% block title%}Про нас{% endblock %}
+
+{% block content %}
+    <div class="test">
+        <h3>Пройдите быструю общую диагностику на нашем сайте за несколько минут</h3>
+        <p>Опишите ваши симптомы в тесте и получите наиболее вероятный диагноз</p>
+        <p>Отвечайте честно</p>
+        <a href="#" onclick="history.go(-1)" class="back"><i class="fa fa-angle-left"></i> Назад</a>
+
+        <div class="quizsection">
+            <form name="quiz" action="javascript:check();" class="quizform">
+                <h3>1. Выберите пол</h3>
+                <input name="vopros1" checked="checked" value="man" id="value1" type="radio"> Мужчина <br>
+                <input name="vopros1" value="woman" id="value2" type="radio"> Женщина <br>
+
+                <h3>2. Выберите ваш возраст</h3>
+                <input name="vopros2" checked="checked" value="yes" id="value1" type="radio"> До 18 <br>
+                <input name="vopros2" value="sometimes" id="value2" type="radio"> От 18 до 60 <br>
+                <input name="vopros2" value="no" id="value3" type="radio"> Больше 60 <br>
+
+                <h3>3. Выберите те симптомы,которые описывают ваше состояние</h3>
+                <input name="vopros3" checked="checked" value="изжога" id="value1" type="checkbox"> Изжога <br>
+                <input name="vopros3" value="тошнота" id="value2" type="checkbox"> Тошнота <br>
+                <input name="vopros3" value="неприятный вкус" id="value2" type="checkbox"> Неприятный вкус <br>
+                <input name="vopros3" value="запах изо рта" id="value3" type="checkbox"> Запах изо рта <br>
+                <input name="vopros3" value="нарушение рефлекса глотания" id="value3" type="checkbox"> Нарушение рефлекса глотания <br>
+                <input name="vopros3" value="общая слабость" id="value3" type="checkbox"> Общая слабость <br>
+                <input name="vopros3" value="выраженная боль в подреберье" id="value3" type="checkbox"> Выраженная боль в подреберье <br>
+                <input name="vopros3" value="отрыжка" id="value3" type="checkbox"> Отрыжка <br>
+                <input name="vopros3" value="боли в средней части желудка" id="value3" type="checkbox"> Боли в средней части желудка <br>
+                <input name="vopros3" value="боли в верхней части желудка" id="value3" type="checkbox"> Боли в верхней части желудка <br>
+                <input name="vopros3" value="чувство раннего насыщения и тяжести в желудке" id="value3" type="checkbox"> "Чувство раннего насыщения и тяжести в желудке" <br>
+                <input name="vopros3" value="другое" id="value3" type="checkbox"> Другое <br>
+                <input value="Узнать результат" class="test_button" type="submit">
+            </form>
+            <p id="answer"></p>
+            <script src="static/main/js/main_checker.js"></script>
+        </div>
+    </div>
+{% endblock %}

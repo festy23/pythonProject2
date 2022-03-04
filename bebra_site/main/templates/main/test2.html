@@ -1,0 +1,58 @@
+{% extends 'main/layout.html' %}
+
+{% block title%}Про нас{% endblock %}
+
+{% block content %}
+    <div class="test">
+        <h3>Проблемы с пищеварением</h3>
+        <p>Опишите ваши симптомы в тесте и получите наиболее вероятный диагноз</p>
+        <p>Отвечайте честно</p>
+        <a href="#" onclick="history.go(-1)" class="back"><i class="fa fa-angle-left"></i> Назад</a>
+        <div class="quizsection">
+            <form name="quiz" action="javascript:check();" class="quizform">
+                <h3>1. Отказываетесь от еды, когда чувствуете голод?</h3>
+                <input name="vopros1" checked="checked" value="yes" id="value1" type="radio"> Да <br>
+                <input name="vopros1" value="sometimes" id="value2" type="radio"> Иногда <br>
+                <input name="vopros1" value="no" id="value3" type="radio"> Нет <br>
+
+                <h3>2. Употребляете ли вы пищу с большим кол-вом углеводов?</h3>
+                <input name="vopros2" checked="checked" value="yes" id="value1" type="radio"> Да <br>
+                <input name="vopros2" value="sometimes" id="value2" type="radio"> Иногда <br>
+                <input name="vopros2" value="no" id="value3" type="radio"> Нет <br>
+
+                <h3>3. Чувствовали ли вы тошноту после пищи?</h3>
+                <input name="vopros3" checked="checked" value="yes" id="value1" type="radio"> Да <br>
+                <input name="vopros3" value="sometimes" id="value2" type="radio"> Иногда <br>
+                <input name="vopros3" value="no" id="value3" type="radio"> Нет <br>
+
+                <h3>4. Не воздерживаетесь ли вы от сахара?</h3>
+                <input name="vopros4" checked="checked" value="yes" id="value1" type="radio"> Да <br>
+                <input name="vopros4" value="sometimes" id="value2" type="radio"> Иногда <br>
+                <input name="vopros4" value="no" id="value3" type="radio"> Нет <br>
+
+                <h3>5. Не стараетесь ли вы употреблять диетические продукты?</h3>
+                <input name="vopros5" checked="checked" value="yes" id="value1" type="radio"> Да <br>
+                <input name="vopros5" value="sometimes" id="value2" type="radio"> Иногда <br>
+                <input name="vopros5" value="no" id="value3" type="radio"> Нет <br>
+
+                <h3>6. Часто ли вы пьете кофе?</h3>
+                <input name="vopros6" checked="checked" value="yes" id="value1" type="radio"> Да <br>
+                <input name="vopros6" value="sometimes" id="value2" type="radio"> Иногда <br>
+                <input name="vopros6" value="no" id="value3" type="radio"> Нет <br>
+
+                <h3>7. Не получаете ли вы удовольствие от хорошей пищи?</h3>
+                <input name="vopros7" checked="checked" value="yes" id="value1" type="radio"> Да <br>
+                <input name="vopros7" value="sometimes" id="value2" type="radio"> Иногда <br>
+                <input name="vopros7" value="no" id="value3" type="radio"> Нет <br>
+
+                <h3>8. Попадали ли вы в больницу из-за болезней желудка?</h3>
+                <input name="vopros8" checked="checked" value="yes" id="value1" type="radio"> Да <br>
+                <input name="vopros8" value="sometimes" id="value2" type="radio"> Иногда <br>
+                <input name="vopros8" value="no" id="value3" type="radio"> Нет <br>
+                <input value="Узнать результат" class="test_button" type="submit">
+            </form>
+            <p id="answer"></p>
+            <script src="static/main/js/checker2.js"></script>
+        </div>
+    </div>
+{% endblock %}
